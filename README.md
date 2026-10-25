@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="brand/logo.png" width="96" alt="NODEZERO logo" />
+
 # NODEZERO
 
 **A free second-monitor coach for Counter-Strike 2 and Dota 2.**
