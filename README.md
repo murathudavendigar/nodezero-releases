@@ -37,7 +37,7 @@ Your live match, your PC, and your own history on one screen, built only from da
 
 **Both games**
 - **Sessions:** every session is saved with its matches, hardware peaks, and your notes.
-- **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with.
+- **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with. Friends in your Steam party are remembered per match, and you can add a friend by their Steam link.
 - **Focus and goals:** set one thing to work on and see whether you hit it.
 - **Optional AI debrief** (your own Gemini key): a short review after a session, never during a match.
 - **Your PC:** CPU, GPU, VRAM, temperature, and game FPS with 1% lows.
