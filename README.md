@@ -28,7 +28,8 @@ Your live match, your PC, and your own history on one screen, built only from da
 - **Buy plan for the next round** from your money, the loss bonus, and the round result. It stays on screen after you die.
 - Round history with how each round ended, your ADR, K/D, and map record.
 - **Map pool and Premier veto:** what to pick and what to ban, from your own results.
-- Stats from **Leetify** and **FACEIT**, a local match archive, and **CS2 demo analysis** after the match.
+- Stats from **Leetify** and **FACEIT**, a local match archive, and **CS2 demo analysis** after the match: where you died and where the killer stood, deaths with no teammate near, a utility map, and a 2D replay of every round.
+- A **heat map** of where you played and died, on the game's own radar, after every CS2 and Dota 2 match.
 
 **Dota 2** (normal and Turbo, detected automatically)
 - Rune, Roshan, Aegis, and Tormentor timers, with optional short beeps.
@@ -39,7 +40,6 @@ Your live match, your PC, and your own history on one screen, built only from da
 - **Sessions:** every session is saved with its matches, hardware peaks, and your notes.
 - **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with. Friends in your Steam party are remembered per match, and you can add a friend by their Steam link.
 - **Focus and goals:** set one thing to work on and see whether you hit it.
-- **Optional AI debrief** (your own Gemini key): a short review after a session, never during a match.
 - **Your PC:** CPU, GPU, VRAM, temperature, and game FPS with 1% lows.
 
 | | |
@@ -73,7 +73,6 @@ Everything below is free and optional. Without it, that part of the app shows `N
 | Steam Web API key | Hours played, CS2 lifetime stats, which friends are in a game | [steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) |
 | Leetify | Aim, utility, and positioning ratings and your recent matches | Works without a key; optional key at [leetify.com/app/developer](https://leetify.com/app/developer) |
 | FACEIT key | FACEIT level, Elo, and match history | [developers.faceit.com](https://developers.faceit.com) (server-side key) |
-| Gemini key | AI debriefs and weekly reviews | [aistudio.google.com/apikey](https://aistudio.google.com/apikey) |
 | OpenDota | Dota comparisons and match lists | On by default, no key |
 | PresentMon | Game FPS and 1% lows | One button in Setup downloads Intel's signed build |
 
@@ -119,7 +118,7 @@ Found a bug or have an idea? Use **About → Report a problem** in the app. It o
    - **Install**'a bas.
    - Dota 2 için Steam'de başlatma seçeneğine `-gamestateintegration` ekle.
    - Oyunu yeniden başlat.
-4. Steam, Leetify, FACEIT ve Gemini anahtarları isteğe bağlıdır. Setup'ta her birinin yanında nereden alınacağını gösteren bir bağlantı var.
+4. Steam, Leetify ve FACEIT anahtarları isteğe bağlıdır. Setup'ta her birinin yanında nereden alınacağını gösteren bir bağlantı var.
 
 Güncelleme çıkınca uygulamanın üstünde bir banner görünür. Oyun açıkken güncelleme yapılmaz.
 
