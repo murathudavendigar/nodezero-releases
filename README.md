@@ -39,7 +39,8 @@ Your live match, your PC, and your own history on one screen, built only from da
 **Both games**
 - **Sessions:** every session is saved with its matches, hardware peaks, and your notes.
 - **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with. Friends in your Steam party are remembered per match, and you can add a friend by their Steam link.
-- **Inventory:** your CS2 items with Steam Market prices (USD or EUR), checked once a day without getting you rate-limited, with filters, the total value, and its change since yesterday. Needs a public Steam inventory.
+- **Inventory:** your CS2 items with Steam Market and Skinport prices (USD or EUR), checked once a day without getting you rate-limited: the total value and its change, every copy's **float and pattern** with a wear bar, Inspect in game, price alerts for the items you choose, the biggest movers, each item's other exteriors and the cases it drops from, and a CSV export. Needs a public Steam inventory (if you hide it later, the items saved before stay).
+- **Case simulator** (just for fun, no real money): open any CS2 case with Valve's published odds and real prices, watch the wallet, and keep what you open.
 - **Report:** your week or month against the one before, from Leetify, FACEIT, your demos, and NODEZERO's own matches, with one thing to work on and what is going well.
 - **Focus and goals:** set one thing to work on and see whether you hit it.
 - **Your PC:** CPU, GPU, VRAM, temperature, and game FPS with 1% lows.
@@ -84,8 +85,8 @@ NODEZERO checks this page for new versions. When one is out, a banner shows what
 
 ## Privacy
 
-- Everything is stored on your PC in `%APPDATA%\com.murat.second-monitor-app`. There is no NODEZERO server, account, or analytics.
-- Lookups go only to the services you turn on, and only for your own account.
+- Everything is stored on your PC in `%APPDATA%\NODEZERO`; About → Your data lists every file and its size. There is no NODEZERO server, account, or analytics.
+- Lookups go only to the services listed in About → Data sources, and only for your own account. Item prices come from a public daily price file on GitHub (no data is sent), with Skinport as a fallback; skin and case lists come from a public file on GitHub.
 - About → **Delete all data** removes it all. Uninstall from Windows Settings → Apps; tick "Delete the application data" to remove the data and cache folders too.
 - The inventory page reads only your public Steam inventory and Steam Market prices; NODEZERO never signs in to Steam.
 - About → **CS2 match demos** shows the demos CS2 downloaded (150-210 MB each) and deletes them when you no longer need them. Analyses you made stay.
@@ -128,4 +129,4 @@ Güncelleme çıkınca uygulamanın üstünde bir banner görünür. Oyun açık
 
 </details>
 
-<sub>Made by Murat Hüdavendigâr Öncü · [GitHub](https://github.com/murathudavendigar). NODEZERO is not affiliated with Valve, Leetify, FACEIT, OpenDota, Google, or Intel. Counter-Strike 2 and Dota 2 are trademarks of Valve Corporation. PresentMon is Intel's open-source tool and is downloaded from Intel's own GitHub release.</sub>
+<sub>Made by Murat Hüdavendigâr Öncü · [muratoncu.com](https://muratoncu.com) · [GitHub](https://github.com/murathudavendigar). NODEZERO is not affiliated with Valve, Leetify, FACEIT, OpenDota, Skinport, Google, or Intel. Counter-Strike 2 and Dota 2 are trademarks of Valve Corporation. PresentMon is Intel's open-source tool and is downloaded from Intel's own GitHub release.</sub>
