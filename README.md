@@ -29,6 +29,7 @@ Your live match, your PC, and your own history on one screen, built only from da
 - Round history with how each round ended, your ADR, K/D, and map record.
 - **Map pool and Premier veto:** what to pick and what to ban, from your own results.
 - Stats from **Leetify** and **FACEIT**, a local match archive, and **CS2 demo analysis** after the match: where you died and where the killer stood, deaths with no teammate near, deaths with a grenade still in hand, how you shoot (standing still on the first bullet, hits, head share), each round's buys, a utility map, a 2D replay of every round with player cards and a round story, and a match card picture to share (no names or ids).
+- A **scoreboard of both teams** for each match (Analytics → CS2 match): Leetify Rating, HLTV Rating 1.0, an approximate Rating 2.0 from the demo, ADR, KAST, and the context of each kill (clutches, outnumbered, against better gear, eco, post-plant).
 - A **heat map** of where you played and died, on the game's own radar: after every Dota 2 match, and for CS2 from the match's demo.
 
 **Dota 2** (normal and Turbo, detected automatically)
