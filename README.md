@@ -28,20 +28,21 @@ Your live match, your PC, and your own history on one screen, built only from da
 - **Buy plan for the next round** from your money, the loss bonus, and the round result. It stays on screen after you die.
 - Round history with how each round ended, your ADR, K/D, and map record.
 - **Map pool and Premier veto:** what to pick and what to ban, from your own results.
-- Stats from **Leetify** and **FACEIT**, a local match archive, and **CS2 demo analysis** after the match: where you died and where the killer stood, deaths with no teammate near, how you shoot (standing still on the first bullet, hits, head share), each round's buys, a utility map, and a 2D replay of every round with player cards and a round story.
+- Stats from **Leetify** and **FACEIT**, a local match archive, and **CS2 demo analysis** after the match: where you died and where the killer stood, deaths with no teammate near, deaths with a grenade still in hand, how you shoot (standing still on the first bullet, hits, head share), each round's buys, a utility map, a 2D replay of every round with player cards and a round story, and a match card picture to share (no names or ids).
 - A **heat map** of where you played and died, on the game's own radar: after every Dota 2 match, and for CS2 from the match's demo.
 
 **Dota 2** (normal and Turbo, detected automatically)
 - Rune, Roshan, Aegis, and Tormentor timers, with optional short beeps.
 - Your GPM, XPM, and last hits next to other players of the same hero (OpenDota).
 - Item timings, deaths, and gold lost in a match review, plus your hero pool.
+- Optional **STRATZ** (your own free token): your lane against the enemy in your role, your side's win chance per minute, where and how you died, your wards on the real minimap, item timings against your own average, every hero with its roles, and the friends you queue with. Your matches are kept on your PC, so older ones stay.
 
 **Both games**
 - **Sessions:** every session is saved with its matches, hardware peaks, and your notes.
 - **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with. Friends in your Steam party are remembered per match, and you can add a friend by their Steam link.
 - **Inventory:** your CS2 items with Steam Market and Skinport prices (USD or EUR), checked once a day without getting you rate-limited: the total value and its change, every copy's **float and pattern** with a wear bar, Inspect in game, price alerts for the items you choose, the biggest movers, each item's other exteriors and the cases it drops from, and a CSV export. Needs a public Steam inventory (if you hide it later, the items saved before stay).
 - **Case simulator** (just for fun, no real money): open any CS2 case with Valve's published odds and real prices, watch the wallet, and keep what you open.
-- **Report:** your week or month against the one before, from Leetify, FACEIT, your demos, and NODEZERO's own matches, with one thing to work on and what is going well.
+- **Report:** your week or month against the one before, from Leetify, FACEIT, your demos, STRATZ, and NODEZERO's own matches, with one thing to work on (linked to the rounds in the replay) and what is going well.
 - **Focus and goals:** set one thing to work on and see whether you hit it.
 - **Your PC:** CPU, GPU, VRAM, temperature, and game FPS with 1% lows.
 
@@ -77,6 +78,7 @@ Everything below is free and optional. Without it, that part of the app shows `N
 | Leetify | Aim, utility, and positioning ratings and your recent matches | Works without a key; optional key at [leetify.com/app/developer](https://leetify.com/app/developer) |
 | FACEIT key | FACEIT level, Elo, and match history | [developers.faceit.com](https://developers.faceit.com) (server-side key) |
 | OpenDota | Dota comparisons and match lists | On by default, no key |
+| STRATZ token | Dota lanes, win chance, deaths, wards, heroes, and party | [stratz.com/api](https://stratz.com/api) (free) |
 | PresentMon | Game FPS and 1% lows | One button in Setup downloads Intel's signed build |
 
 ## Updates
@@ -123,10 +125,10 @@ Found a bug or have an idea? Use **About → Report a problem** in the app. It o
    - **Install**'a bas.
    - Dota 2 için Steam'de başlatma seçeneğine `-gamestateintegration` ekle.
    - Oyunu yeniden başlat.
-4. Steam, Leetify ve FACEIT anahtarları isteğe bağlıdır. Setup'ta her birinin yanında nereden alınacağını gösteren bir bağlantı var.
+4. Steam, Leetify, FACEIT ve STRATZ anahtarları isteğe bağlıdır. Setup'ta her birinin yanında nereden alınacağını gösteren bir bağlantı var.
 
 Güncelleme çıkınca uygulamanın üstünde bir banner görünür. Oyun açıkken güncelleme yapılmaz.
 
 </details>
 
-<sub>Made by Murat Hüdavendigâr Öncü · [muratoncu.com](https://muratoncu.com) · [GitHub](https://github.com/murathudavendigar). NODEZERO is not affiliated with Valve, Leetify, FACEIT, OpenDota, Skinport, Google, or Intel. Counter-Strike 2 and Dota 2 are trademarks of Valve Corporation. PresentMon is Intel's open-source tool and is downloaded from Intel's own GitHub release.</sub>
+<sub>Made by Murat Hüdavendigâr Öncü · [muratoncu.com](https://muratoncu.com) · [GitHub](https://github.com/murathudavendigar). NODEZERO is not affiliated with Valve, Leetify, FACEIT, OpenDota, STRATZ, Skinport, Google, or Intel. Counter-Strike 2 and Dota 2 are trademarks of Valve Corporation. PresentMon is Intel's open-source tool and is downloaded from Intel's own GitHub release.</sub>
