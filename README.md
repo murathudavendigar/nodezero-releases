@@ -22,28 +22,46 @@ Your live match, your PC, and your own history on one screen, built only from da
 
 </div>
 
-## What it does
+## Why I made it
+
+I play a lot of CS2 (Premier and FACEIT) and Dota 2 Turbo, and I always had a second monitor doing nothing. My stats were spread over five websites and none of them told me what to do *next round*. So I built one app that puts the live match, my own history, and my PC on that second screen. It is a hobby project by one person, free, with no ads and no account.
+
+## Highlights
+
+- **CS2 buy plan for the next round**, from your money, the loss bonus, and the round result.
+- **NODEZERO Rating (NZR):** a 1.0-10.0 score for every player in a CS2 match (6.0 is the lobby average), split into fragging, damage, survival, impact, and team play.
+- **CS2 demo analysis:** where you died and where the killer stood, a 2D replay of every round, how you shoot, and a scoreboard of both teams. New demos are read by themselves after you close the game.
+- **A notice after each CS2 match** with the map, result, your NZR, and your Premier change.
+- **Dota 2 timers** for runes, Roshan, Aegis, and Tormentor, with Turbo times.
+- **Your CS2 and Dota 2 inventory** with daily prices, float and pattern, and price alerts.
+
+## Everything it does
+
+**Profile** (the first page)
+- Your Premier, FACEIT, Wingman, and Dota medal in one line, your Premier and NZR trend, your Dota form and heroes, your inventory worth, this week's record, and your PC.
 
 **Counter-Strike 2**
-- **Buy plan for the next round** from your money, the loss bonus, and the round result. It stays on screen after you die.
+- **Buy plan for the next round.** It stays on screen after you die.
 - Round history with how each round ended, your ADR, K/D, and map record.
 - **Map pool and Premier veto:** what to pick and what to ban, from your own results.
-- Stats from **Leetify** and **FACEIT**, a local match archive, and **CS2 demo analysis** after the match: where you died and where the killer stood, deaths with no teammate near, deaths with a grenade still in hand, how you shoot (standing still on the first bullet, hits, head share), each round's buys, a utility map, a 2D replay of every round with player cards and a round story, and a match card picture to share (no names or ids).
-- A **scoreboard of both teams** for each match (Analytics → CS2 match): Leetify Rating, HLTV Rating 1.0, an approximate Rating 2.0 from the demo, ADR, KAST, and the context of each kill (clutches, outnumbered, against better gear, eco, post-plant).
-- A **heat map** of where you played and died, on the game's own radar: after every Dota 2 match, and for CS2 from the match's demo.
+- Stats from **Leetify** and **FACEIT**, and a local match archive.
+- **Demo analysis** after the match: deaths with no teammate near, deaths with a grenade still in hand, how you shoot (standing still on the first bullet, hits, head share), each round's buys, a utility map, a 2D replay with player cards and a round story, and a match card picture to share (no names or ids).
+- A **scoreboard of both teams** for each match: NZR, Leetify Rating, HLTV Rating 1.0, an approximate Rating 2.0, ADR, KAST, each player's Premier rating and the points won or lost, and the context of each kill (clutches, outnumbered, against better gear, eco, post-plant). FACEIT matches are listed too.
+- A match without a demo gets a **Download demo in CS2** button.
 
 **Dota 2** (normal and Turbo, detected automatically)
 - Rune, Roshan, Aegis, and Tormentor timers, with optional short beeps.
 - Your GPM, XPM, and last hits next to other players of the same hero (OpenDota).
 - Item timings, deaths, and gold lost in a match review, plus your hero pool.
-- Optional **STRATZ** (your own free token): your lane against the enemy in your role, your side's win chance per minute, where and how you died, your wards on the real minimap, item timings against your own average, every hero with its roles, and the friends you queue with. Your matches are kept on your PC, so older ones stay.
+- A **heat map** of where you played and died, on the game's own minimap.
+- Optional **STRATZ** (your own free token): a scoreboard of all ten players, your lane against the enemy in your role, your side's win chance per minute, where and how you died, your wards, item timings against your own average, and the friends you queue with.
 
 **Both games**
 - **Sessions:** every session is saved with its matches, hardware peaks, and your notes.
-- **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with. Friends in your Steam party are remembered per match, and you can add a friend by their Steam link.
-- **Inventory:** your CS2 items with Steam Market and Skinport prices (USD or EUR), checked once a day without getting you rate-limited: the total value and its change, every copy's **float and pattern** with a wear bar, Inspect in game, price alerts for the items you choose, the biggest movers, each item's other exteriors and the cases it drops from, and a CSV export. Needs a public Steam inventory (if you hide it later, the items saved before stay).
-- **Case simulator** (just for fun, no real money): open any CS2 case with Valve's published odds and real prices, watch the wallet, and keep what you open.
-- **Report:** your week or month against the one before, from Leetify, FACEIT, your demos, STRATZ, and NODEZERO's own matches, with one thing to work on (linked to the rounds in the replay) and what is going well.
+- **Patterns:** how you play by match of the session, after a loss, and by time of day, and who you win with.
+- **Inventory:** CS2 and Dota 2 items with Steam Market and Skinport prices (USD or EUR), checked once a day: total value and its change, every CS2 copy's **float and pattern**, Inspect in game, price alerts, the biggest movers, and a CSV export. Needs a public Steam inventory.
+- **Case simulator** (just for fun, no real money): open any CS2 case with Valve's published odds and real prices.
+- **Report:** your week or month against the one before, with one thing to work on and what is going well.
 - **Focus and goals:** set one thing to work on and see whether you hit it.
 - **Your PC:** CPU, GPU, VRAM, temperature, and game FPS with 1% lows.
 
@@ -59,6 +77,17 @@ NODEZERO uses **Valve's official Game State Integration (GSI)**, the same featur
 - It never reads game memory, injects anything, or draws over the game.
 - It never shows information about the other team. GSI only sends a player their own data.
 - The CS2 bomb timer is **off by default**, because FACEIT and some leagues do not allow second-screen bomb timers.
+
+## Why trust it?
+
+Fair question for an unknown .exe from the internet. Here is what you can check yourself:
+
+- **Scan the file.** Every release page lists the installer's SHA-256 with a VirusTotal link. You can also upload the file to [virustotal.com](https://www.virustotal.com) yourself.
+- **No password, no Steam login.** NODEZERO never asks for your Steam password and never signs in to Steam. Keys for Steam, Leetify, FACEIT, and STRATZ are optional: the app works without any of them, and the ones you add stay on your PC.
+- **It only talks to the services it lists.** About → Data sources names every outside service it uses and why. There is no NODEZERO server, account, or analytics.
+- **It does not touch the game.** It only adds Valve's GSI config file to the game folders. Setup → Remove takes it out again.
+- **Why no code-signing?** A Windows code-signing certificate costs a few hundred dollars a year, which is a lot for a free hobby project. That is why SmartScreen warns you.
+- **Why is the code not public?** It is a one-person project and the code is private for now. That may change later.
 
 ## Install
 
@@ -99,6 +128,9 @@ NODEZERO checks this page for new versions. When one is out, a banner shows what
 **Can I get banned for this?**
 NODEZERO only uses Valve's official GSI, which Valve provides for exactly this kind of tool. It does not touch the game's memory or files beyond adding the one config file.
 
+**Is it free?**
+Yes. No ads, no account, no paid tier. The optional services (Steam, Leetify, FACEIT, STRATZ) are free too.
+
 **Will it slow my game down?**
 It runs at "below normal" priority, so Windows always schedules the game first. It measured about 0.16% of total CPU during a game.
 
@@ -113,7 +145,7 @@ No, Windows only.
 
 ## Feedback
 
-Found a bug or have an idea? Use **About → Report a problem** in the app. It opens a [GitHub issue](https://github.com/murathudavendigar/nodezero-releases/issues) with your NODEZERO version, Windows, CPU, GPU, and setup state already filled in, and no keys, Steam ids, or names.
+Found a bug or have an idea? I read every report. Use **About → Report a problem** in the app. It opens a [GitHub issue](https://github.com/murathudavendigar/nodezero-releases/issues) with your NODEZERO version, Windows, CPU, GPU, and setup state already filled in, and no keys, Steam ids, or names.
 
 ---
 
