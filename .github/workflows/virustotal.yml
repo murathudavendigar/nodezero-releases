@@ -136,11 +136,30 @@ jobs:
                   time.sleep(15)
                   report = file_report() or data["data"]["attributes"]
               flagged, engines = stats_of(report)
+              results = report.get("last_analysis_results") or report.get("results") or {}
+              by = sorted((r.get("engine_name") or name for name, r in results.items()
+                           if r.get("category") in ("malicious", "suspicious")), key=str.lower)
+              microsoft = (results.get("Microsoft") or {}).get("category")
+              defender = {"undetected": "clean", "harmless": "clean",
+                          "malicious": "flagged", "suspicious": "flagged"}.get(microsoft)
               when = datetime.fromtimestamp(report.get("last_analysis_date") or report.get("date") or time.time(), timezone.utc)
               day = when.strftime("%Y-%m-%d")
               text = (f"**VirusTotal:** {flagged} of {engines} engines flagged this file "
-                      f"(scanned {when.strftime('%b')} {when.day}, {when.year}). [See the report]({link}).")
-              write("done", text, flagged=flagged, engines=engines, date=day, sha256=sha)
+                      f"(scanned {when.strftime('%b')} {when.day}, {when.year})"
+                      + (f": {', '.join(by)}" if by else "") + ".")
+              if defender == "clean":
+                  text += " Microsoft Defender found nothing."
+              elif defender == "flagged":
+                  text += " Microsoft Defender flagged it."
+              text += f" [See the report]({link})."
+              if flagged:
+                  text += ("\n\nNew installers without a paid code-signing certificate often get a few flags "
+                           "from engines that guess from the file's shape (machine learning) instead of "
+                           "finding known malware. The report shows each engine's verdict.")
+              data = dict(flagged=flagged, engines=engines, date=day, sha256=sha, by=by)
+              if defender:
+                  data["defender"] = defender
+              write("done", text, **data)
           except Exception as error:
               write("unfinished", unfinished, sha256=sha)
               sys.exit(str(error))
