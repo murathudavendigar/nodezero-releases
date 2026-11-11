@@ -14,7 +14,7 @@ Your live match, your PC, and your own history on one screen, built only from da
 
 ### [⬇ Download for Windows](https://github.com/murathudavendigar/nodezero-releases/releases/latest)
 
-<sub>Download <code>NODEZERO_x.y.z_x64-setup.exe</code> from the latest release. About 3 MB, installs without admin rights.</sub>
+<sub>Download <code>NODEZERO_x.y.z_x64-setup.exe</code> from the latest release. About 6 MB, installs without admin rights.</sub>
 
 <br>
 
@@ -67,7 +67,7 @@ I play a lot of CS2 (Premier and FACEIT) and Dota 2 Turbo, and I always had a se
 
 | | |
 | --- | --- |
-| ![Overview](screenshots/overview.png) | ![Dota 2 live view](screenshots/live-dota.png) |
+| ![Inventory with prices, float, and the most valuable items](screenshots/inventory.png) | ![Dota 2 live view](screenshots/live-dota.png) |
 | ![Session summary](screenshots/summary.png) | ![Analytics](screenshots/analytics.png) |
 
 ## Fair play
