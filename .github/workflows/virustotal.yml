@@ -137,7 +137,10 @@ jobs:
                   report = file_report() or data["data"]["attributes"]
               flagged, engines = stats_of(report)
               results = report.get("last_analysis_results") or report.get("results") or {}
-              by = sorted((r.get("engine_name") or name for name, r in results.items()
+              # The API's engine names, where the report page shows another one.
+              shown = {"APEX": "SecureAge", "Cylance": "Arctic Wolf"}
+              by = sorted((shown.get(r.get("engine_name") or name, r.get("engine_name") or name)
+                           for name, r in results.items()
                            if r.get("category") in ("malicious", "suspicious")), key=str.lower)
               microsoft = (results.get("Microsoft") or {}).get("category")
               defender = {"undetected": "clean", "harmless": "clean",
