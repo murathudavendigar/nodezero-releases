@@ -82,7 +82,7 @@ NODEZERO uses **Valve's official Game State Integration (GSI)**, the same featur
 
 Fair question for an unknown .exe from the internet. Here is what you can check yourself:
 
-- **Scan the file.** Every release page lists the installer's SHA-256 with a VirusTotal link. You can also upload the file to [virustotal.com](https://www.virustotal.com) yourself.
+- **Scan the file.** Every release is uploaded to VirusTotal by itself when it comes out, and its release page shows how many engines flagged it, with a link to the full report. The page also lists the installer's SHA-256, so you can check that your download is the same file (`Get-FileHash` in PowerShell).
 - **No password, no Steam login.** NODEZERO never asks for your Steam password and never signs in to Steam. Keys for Steam, Leetify, FACEIT, and STRATZ are optional: the app works without any of them, and the ones you add stay on your PC.
 - **It only talks to the services it lists.** About → Data sources names every outside service it uses and why. There is no NODEZERO server, account, or analytics.
 - **It does not touch the game.** It only adds Valve's GSI config file to the game folders. Setup → Remove takes it out again.
